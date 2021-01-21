@@ -46,8 +46,10 @@ const getData = async () => {
         .textContent = latitude;
     document.querySelector('#longitude')
         .textContent = longitude;
+
+    //loop getData after fetching is done
+    setTimeout(getData, 1000);
 };
 
-// call getData every second
+// call getData
 getData();
-setInterval(getData, 1000);
