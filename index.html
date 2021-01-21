@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ISS Locator</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/1a8bb7941b.js" crossorigin="anonymous"></script>
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Where is the ISS at?</h1>
+        <div class="location">
+            <p>Latitude: <span id="latitude"></span></p>
+            <p>Longitude: <span id="longitude"></span></p>
+        </div>
+    </header>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+    <footer>
+        <p><a href="#">View my code <i class="fab fa-github"></i></a></p>
+    </footer>
+</body>
+</html>
